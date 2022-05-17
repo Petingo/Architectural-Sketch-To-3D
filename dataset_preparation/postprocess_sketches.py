@@ -8,7 +8,7 @@ ray.init()
 
 from tqdm import tqdm
 
-BUILDING_DATASET_ROOT = "/mnt/c/Users/Petingo/Downloads/Building-Dataset-Generator/Simple-House-SameWH"
+BUILDING_DATASET_ROOT = "/mnt/c/Users/Petingo/Downloads/Building-Dataset-Generator/Simple-House"
 
 SKETCH_PATH = os.path.join(BUILDING_DATASET_ROOT, "{model_id}", "sketches")
 SKETCH_FILENAME = os.path.join(SKETCH_PATH, "render_{sketch_id}.png")
@@ -39,11 +39,11 @@ def run(model_id):
             edge_pixel = np.logical_xor(edge_pixel, white_pixel)
 
             sketch[background_pixel] = [0, 0, 0, 0]
-            sketch[white_pixel] = [255, 255, 255, 255]
-            sketch[edge_pixel] = [0, 0, 0, 255]
+            sketch[white_pixel] = [0, 0, 0, 255]
+            sketch[edge_pixel] = [255, 255, 255, 255]
             
             cv2.imwrite(sketch_filename, sketch)
 
-task = [run.remote(i) for i in range(MODEL_COUNT)]
+task = [run.remote(i) for i in range(5)]
 ray.get(task)
     

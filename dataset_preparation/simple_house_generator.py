@@ -32,7 +32,6 @@ SAME_WIDTH_PORTION = 0.5
 # Config for exporting files
 # ------------------------------------------------------------------------------------------------- #
 
-# MODEL_COUNT = 3
 SKETCHES_PER_MODEL = 20
 
 EXPORT_W = 512
@@ -210,11 +209,11 @@ for model_id in range(MODEL_COUNT):
                 elevation = random.randint(0, 5)
             # other perspective
             else:
-                elevation = random.randint(5, 15)
+                elevation = random.randint(-15, 15)
                 
             # In view.txt:
             # azimuth elevation 0 distance
-            view_txt.write("{a} {e} 0 {d}\n".format(a=azimuth, e=elevation, d=CAM_DISTANCE))
+            view_txt.write("{a} {e} 0 {d}\n".format(a=azimuth, e=elevation, d=2.0))
             
             targetLocation = center_point
             cameraLocation = spherical_to_Point3d(azimuth, elevation, CAM_DISTANCE)

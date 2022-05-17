@@ -1,3 +1,6 @@
+# Architectural Sketch To 3D Printing
+Take a single architectural sketch as input and generate a ready-to-print 3D model.
+
 ## Dataset Preparation
 ### Simple House Dataset Generator
 - `simple_house_generator.py`: A grasshopper script for generating the "Simple House" dataset, which the structure is similiar to the `shapenet-synthetic` dataset from [sketch2model](https://github.com/bennyguo/sketch2model).

@@ -12,7 +12,7 @@ from scipy.io import savemat, loadmat
 from madcad.hashing import PositionMap
 from madcad.io import read
 
-DATASET_ROOT = "/mnt/c/Users/Petingo/Downloads/Building-Dataset-Generator/Simple-House-SameWH"
+DATASET_ROOT = "/mnt/c/Users/Petingo/Downloads/Building-Dataset-Generator/Simple-House-2"
 OBJ_FILENAME = os.path.join(DATASET_ROOT, "{model_id}/model.obj")
 MTL_FILENAME = os.path.join(DATASET_ROOT, "{model_id}/model.mtl")
 
@@ -29,7 +29,7 @@ def get_voxel_tensor(path):
     
     return voxel
 
-for i in tqdm(range(0, 5000)):
+for i in tqdm(range(4000, 5000)):
     # obj_filename = OBJ_FILENAME.format(model_id = i)
     # mtl_filename = MTL_FILENAME.format(model_id = i)
 

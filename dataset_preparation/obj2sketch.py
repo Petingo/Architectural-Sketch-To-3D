@@ -67,6 +67,7 @@ def get_center_point(obj_filename):
     
     return Rhino.Geometry.Point3d(center_point[0], center_point[1], center_point[2])
 
+
 for model_id in range(MODEL_COUNT):
     
     if not os.path.exists(EXPORT_SKETCH_PATH.format(model_id=model_id)):
