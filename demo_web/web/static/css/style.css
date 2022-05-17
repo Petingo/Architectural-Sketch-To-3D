@@ -1,0 +1,72 @@
+html {
+    overflow: hidden
+}
+
+.sidebar {
+    background-color: #333333;
+    box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.7);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.sidebar input,
+.sidebar button {
+    text-align: center;
+    width: 45px;
+}
+
+.sidebar li:last-of-type {
+    margin-top: auto;
+}
+
+.sidebar button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.sidebar label {
+    display: block;
+    font-size: 12px;
+}
+
+#sketch-canvas-container {
+    width: 50vw;
+    height: 100vh;
+    background-color: #333333;
+    box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.7);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+#model-container {
+    width: 50vw;
+    height: 100vh;
+    background-color: #333333;
+    box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.7);
+    color: #fff;
+    position: absolute;
+    left: 50vw;
+    top: 0;
+    z-index: 1;
+}
+

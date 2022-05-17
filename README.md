@@ -3,6 +3,7 @@ Take a single architectural sketch as input and generate a ready-to-print 3D mod
 
 ## Dataset Preparation
 ### Simple House Dataset Generator
+![](https://raw.githubusercontent.com/Petingo/Architectural-Sketch-To-3D-Printing/master/imgs/simple-house-same-wh.gif)
 - `simple_house_generator.py`: A grasshopper script for generating the "Simple House" dataset, which the structure is similiar to the `shapenet-synthetic` dataset from [sketch2model](https://github.com/bennyguo/sketch2model).
 
 ### Post processing
