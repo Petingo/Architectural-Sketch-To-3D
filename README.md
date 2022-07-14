@@ -6,6 +6,8 @@ Take a single architectural sketch as input and generate a ready-to-print 3D mod
 ![](https://raw.githubusercontent.com/Petingo/Architectural-Sketch-To-3D-Printing/master/imgs/simple-house-same-wh.gif)
 - `simple_house_generator.gh`: A grasshopper script for generating the "Simple House" dataset. After running this script, you can use `postprocess_sketch.py` and `gen_voxel_from_obj.py` to convert the sketch into the same style as the `shapenet-synthetic` dataset from [sketch2model](https://github.com/bennyguo/sketch2model) and generate the corresponding voxel.
 
+- For training the model and evaluation, please refer to [sketch2model](https://github.com/bennyguo/sketch2model).
+
 ### Simple House Dataset
 ![](imgs/dataset_perspective.png)
 In this project, we proposed the Simple House Dataset. We define 5 categories of houses – distinguished by roof type and other geometric properties – and generated 1000 models for each category with parameters chosen randomly. Each model includes a mesh and 20 perspectival line drawings taken from different angles, where:
