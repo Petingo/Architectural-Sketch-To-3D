@@ -7,7 +7,7 @@ LOAD_EPOCH = '1900'
 
 DATASET_ROOT = "/home/wsl/Architectural-Sketch-To-3D-Printing/gen_results"
 SKETCH_ROOT = "/home/wsl/Architectural-Sketch-To-3D-Printing/sketches"
-OUTPUT_ROOT = "/home/wsl/Architectural-Sketch-To-3D-Printing/demo_web/web/static/objs"
+OUTPUT_ROOT = "/home/wsl/Architectural-Sketch-To-3D-Printing/demo/web/static/objs"
 
 SKETCH2MODEL_ROOT = '/home/wsl/2d23d/sketch2model'
 
