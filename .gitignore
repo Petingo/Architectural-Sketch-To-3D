@@ -1,3 +1,9 @@
+temp
+demo/web/static/objs/*
+to_print
+*.zip
+
+# Python
 __pycache__/
 *.py[cod]
 
